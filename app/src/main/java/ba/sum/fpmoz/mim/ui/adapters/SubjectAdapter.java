@@ -15,7 +15,6 @@ import com.firebase.ui.database.FirebaseRecyclerOptions;
 
 import ba.sum.fpmoz.mim.R;
 import ba.sum.fpmoz.mim.SubjectAdminEditActivity;
-import ba.sum.fpmoz.mim.model.Class;
 import ba.sum.fpmoz.mim.model.Subject;
 
 public class SubjectAdapter extends FirebaseRecyclerAdapter<Subject,SubjectAdapter.SubjectViewHolder> {
@@ -65,9 +64,7 @@ public class SubjectAdapter extends FirebaseRecyclerAdapter<Subject,SubjectAdapt
             subjectName=itemView.findViewById(R.id.subjectNameTxt);
             subjectEditBtn = itemView.findViewById(R.id.subjectEditBtn);
             subjectDeleteBtn = itemView.findViewById(R.id.subjectDeleteBtn);
-
             subjectDeleteBtn.setOnClickListener(v -> getRef(getAdapterPosition()).removeValue());
-
             subjectEditBtn.setOnClickListener((v)->{
                 String key=getRef(getAdapterPosition()).getKey();
 
@@ -75,6 +72,7 @@ public class SubjectAdapter extends FirebaseRecyclerAdapter<Subject,SubjectAdapt
                 i.putExtra("SUBJECT_ID",key);
                 itemView.getContext().startActivity(i);
             });
+
             itemView.setOnClickListener((v) -> clickListener.OnClickListener(v, getAdapterPosition()));
             itemView.setOnLongClickListener((v)->{
                 clickListener.OnClickListener(v, getAdapterPosition());
