@@ -31,8 +31,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d18851a-b015-421b-af95-686792ebff71" name="Default Changelist" comment="dodavanje korisnika role pregled nastavnika">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+    <list default="true" id="1d18851a-b015-421b-af95-686792ebff71" name="Default Changelist" comment="popravljeni bugovi">
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_0_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_experimental_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_experimental_1_0_0_aar.xml" afterDir="false" />
@@ -92,6 +91,22 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/ba/sum/fpmoz/mim/HomeNavigationActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ba/sum/fpmoz/mim/HomeNavigationActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ba/sum/fpmoz/mim/HomeNavigationProfesorActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ba/sum/fpmoz/mim/HomeNavigationProfesorActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ba/sum/fpmoz/mim/SubjectAdminEditActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ba/sum/fpmoz/mim/TabbedProffesorClassesActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ba/sum/fpmoz/mim/TabbedSubjectAdminActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ba/sum/fpmoz/mim/model/Subject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ba/sum/fpmoz/mim/ui/adapters/SubjectAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ba/sum/fpmoz/mim/ui/fragments/subjects/AddSubjectFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ba/sum/fpmoz/mim/ui/fragments/subjects/ListSubjectFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ba/sum/fpmoz/mim/ui/fragments/users/AddUsersFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ba/sum/fpmoz/mim/ui/fragments/users/AddUsersFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ba/sum/fpmoz/mim/ui/fragments/users/ListTeachersFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ba/sum/fpmoz/mim/ui/fragments/users/ListTeachersFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_subject_admin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_subject_admin_edit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_subject_list.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tabbed_proffesor_classes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tabbed_subjects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/viewholder_subject_admin.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -148,7 +163,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout" />
     <property name="multi-representation-previewC:/Users/Korisnik/.gradle/caches/modules-2/files-2.1/androidx.recyclerview/recyclerview/1.1.0/f2bdf79e1977939817f54a9d3e2f6bc52b63bdd0/recyclerview-1.1.0-sources.jar!/androidx/recyclerview/widget/RecyclerView.java_selected" value="Custom views" />
     <property name="multi-representation-previewC:/Users/megid/.gradle/caches/modules-2/files-2.1/androidx.recyclerview/recyclerview/1.1.0/f2bdf79e1977939817f54a9d3e2f6bc52b63bdd0/recyclerview-1.1.0-sources.jar!/androidx/recyclerview/widget/RecyclerView.java_selected" value="Custom views" />
-    <property name="project.structure.last.edited" value="Suggestions" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
@@ -160,11 +175,11 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\megid\Downloads\ednevnik-main\app\src\main\res" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="ba.sum.fpmoz.mim.ui" />
+    <key name="android.template.-681515617">
       <recent name="ba.sum.fpmoz.mim" />
     </key>
-    <key name="android.template.-681515617">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ba.sum.fpmoz.mim.ui" />
       <recent name="ba.sum.fpmoz.mim" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -436,27 +451,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="dodavanje korisnika role pregled nastavnika" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="390" y="0" key="#Ednevnik-1.Ednevnik.app" timestamp="1611854402874">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="390" y="0" key="#Ednevnik-1.Ednevnik.app/0.0.1366.728@0.0.1366.728" timestamp="1611854402874" />
     <state x="395" y="91" key="#Inspections" timestamp="1611269492756">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="395" y="91" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1611269492756" />
-    <state x="254" y="140" key="#PSD" timestamp="1611854468100">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="286" y="158" key="#PSD" timestamp="1611264299896">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="254" y="140" key="#PSD/0.0.1366.728@0.0.1366.728" timestamp="1611854468100" />
     <state x="286" y="158" key="#PSD/0.0.1536.824@0.0.1536.824" timestamp="1611264299896" />
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610981179372">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1610981179372" />
-    <state x="753" y="94" key="#com.intellij.ide.util.MemberChooser" timestamp="1611868051079">
+    <state x="753" y="94" key="#com.intellij.ide.util.MemberChooser" timestamp="1611787752480">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="753" y="94" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1611868051079" />
+    <state x="753" y="94" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1611787752480" />
     <state x="847" y="175" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1611311542595" />
     <state x="697" y="330" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1611227796759">
       <screen x="0" y="0" width="1536" height="824" />
@@ -472,14 +482,18 @@
     <state x="444" y="140" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1611776679853" />
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1611308170992" />
     <state x="571" y="173" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/75.0.1525.900@75.0.1525.900" timestamp="1611849811022" />
+    <state x="167" y="92" width="1341" height="716" key="AVDManager" timestamp="1611951183057">
+      <screen x="75" y="0" width="1525" height="900" />
+    </state>
+    <state x="167" y="92" width="1341" height="716" key="AVDManager/75.0.1525.900@75.0.1525.900" timestamp="1611951183057" />
     <state x="349" y="167" key="AndroidCreateResourceDirectoryDialog" timestamp="1611264698941">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="349" y="167" key="AndroidCreateResourceDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1611264698941" />
-    <state x="526" y="207" key="AndroidCreateResourceFileDialog" timestamp="1611868736372">
+    <state x="526" y="207" key="AndroidCreateResourceFileDialog" timestamp="1611788131935">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="526" y="207" key="AndroidCreateResourceFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1611868736372" />
+    <state x="526" y="207" key="AndroidCreateResourceFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1611788131935" />
     <state x="698" y="234" key="AndroidCreateResourceFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1611306975650" />
     <state x="481" y="109" key="AndroidProcessChooserDialog" timestamp="1611423035876">
       <screen x="0" y="0" width="1366" height="728" />
@@ -525,10 +539,9 @@
     </state>
     <state width="1281" height="151" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1611792023442" />
     <state width="1491" height="208" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1611313634998" />
-    <state x="174" y="140" width="1192" height="516" key="IDE.errors.dialog" timestamp="1611855209021">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="698" y="158" key="IDE.errors.dialog" timestamp="1611226270202">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="174" y="140" width="1192" height="516" key="IDE.errors.dialog/0.0.1366.728@0.0.1366.728" timestamp="1611855209021" />
     <state x="698" y="158" key="IDE.errors.dialog/0.0.1536.824@0.0.1536.824" timestamp="1611226270202" />
     <state x="246" y="0" key="SettingsEditor" timestamp="1611491934626">
       <screen x="0" y="0" width="1366" height="728" />
@@ -545,6 +558,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="1004" y="194" key="chooseDestDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1611241182025" />
+    <state x="167" y="92" width="1341" height="716" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1611951681510">
+      <screen x="75" y="0" width="1525" height="900" />
+    </state>
+    <state x="167" y="92" width="1341" height="716" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/75.0.1525.900@75.0.1525.900" timestamp="1611951681510" />
+    <state x="167" y="92" width="1341" height="716" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1611951681510">
+      <screen x="75" y="0" width="1525" height="900" />
+    </state>
+    <state x="167" y="92" width="1341" height="716" key="com.intellij.history.integration.ui.views.FileHistoryDialog/75.0.1525.900@75.0.1525.900" timestamp="1611951681510" />
     <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611319477585">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
