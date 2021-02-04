@@ -41,7 +41,6 @@ public class TeacherAdminEditActivity extends AppCompatActivity {
         this.studentEditBtn.setOnClickListener((v) -> {
             Teacher s = new Teacher();
             s.name = studentNameEdt.getText().toString();
-            s.email = studentSurnameEdt.getText().toString();
             ref.setValue(s);
 
         });
@@ -51,7 +50,6 @@ public class TeacherAdminEditActivity extends AppCompatActivity {
                 Teacher student = snapshot.getValue(Teacher.class);
                 assert student != null;
                 studentNameEdt.setText(student.name);
-                studentSurnameEdt.setText(student.email);
             }
 
             @Override

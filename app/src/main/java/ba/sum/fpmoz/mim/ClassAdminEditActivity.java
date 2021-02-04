@@ -19,10 +19,10 @@ import ba.sum.fpmoz.mim.model.Class;
 public class ClassAdminEditActivity extends AppCompatActivity {
     FirebaseDatabase db;
     DatabaseReference ref;
-    EditText classLevelEdt;
+
     EditText classNameEdt;
-    EditText classSubjectEdt;
-    EditText classTeacherEdt;
+
+
     Button classEditBtn;
 
     @Override
@@ -30,9 +30,10 @@ public class ClassAdminEditActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_class_admin_edit);
 
+
         this.classNameEdt=findViewById(R.id.classNameEdt);
-        this.classSubjectEdt=findViewById(R.id.classSubjectEdt);
-        this.classTeacherEdt=findViewById(R.id.classTeacherEdt);
+
+
         this.classEditBtn=findViewById(R.id.classEditBtn);
 
         final String key=getIntent().getStringExtra("CLASS_ID");
@@ -41,9 +42,10 @@ public class ClassAdminEditActivity extends AppCompatActivity {
 
         this.classEditBtn.setOnClickListener((v) ->{
             Class c=new Class();
+
             c.name=classNameEdt.getText().toString();
-            c.subject=classSubjectEdt.getText().toString();
-            c.classTeacher=classTeacherEdt.getText().toString();
+
+
             ref.setValue(c);
 
 
@@ -53,10 +55,10 @@ public class ClassAdminEditActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 Class klass=snapshot.getValue(Class.class);
                 assert klass!=null;
-                classLevelEdt.setText(klass.uid);
+
                 classNameEdt.setText(klass.name);
-                classSubjectEdt.setText(klass.subject);
-                classTeacherEdt.setText(klass.classTeacher);
+
+
             }
 
             @Override
